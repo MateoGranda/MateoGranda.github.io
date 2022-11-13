@@ -1,0 +1,103 @@
+.info-categorias-container
+{
+    width: 80%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.descripcion-categorias
+{
+    padding: 20px;
+    background: #255784;
+    border-radius: 15px;
+    margin: 0 auto;
+    
+}
+.reglas
+{
+    background-color: #F0A132;
+    color: #fff;
+    padding: 10px 20px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top:50px;   
+    font-size: 17px;
+    cursor: pointer;
+    width: 75px;
+    text-align: center;
+    margin:15px auto;
+}
+.descripcion-reglas-categorias
+{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-radius: 15px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.reglas-normas-hover-continer
+{
+    background-color:rgba(37, 37, 37, 0.6);
+    position: fixed;
+    top:50%;
+    Left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height:100vh;
+    display:none;
+
+}
+.reglas-normas-hover
+{
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color:rgba(37, 37, 37, 0.8);
+}
+.reglas-normas-hover p
+{
+    color:#ffffff;
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    width: min-content;
+    background-color:rgba(163, 16, 16, 0.9);
+    margin: 0 auto;
+}
+.cerrar-reglas-normas
+{
+    width: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 45%;
+}
+.inscripciones
+{
+    margin-top: 20px;
+}
+.inscripciones-text
+{
+
+    background: #F0A132;
+    border-radius: 15px;
+    width: min-content;
+    color: black;
+    font-size: 19px;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.reglas-normas
+{
+    width: 50%;
+    margin: 0 auto;
+}
+

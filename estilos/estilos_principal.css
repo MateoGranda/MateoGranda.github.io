@@ -1,0 +1,283 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    width: 100%;
+    position: relative;
+    padding-bottom:  30px;;
+    min-height: 100vh;
+}
+.body
+{ 
+    scroll-behavior: unset;
+
+}
+/*Barra de navegación*/
+.nav-container
+{
+    width: 100%;
+    height: 100px;
+    background-color:rgb(24, 23, 90);
+    display: grid;
+    display: inline-grid;
+    grid-template-columns: 10% 20% 70%; 
+    text-align: center;
+}
+.nav-container img
+{
+    height:95px;
+    text-align: center;
+    margin: auto 0;
+}
+.nav-item
+{
+    padding: 0px;
+    text-align: center;
+    
+}
+.nav-container div
+{   
+    font-size: 18px;
+    text-align: center;
+}
+.nav-item-externo a
+{
+    text-decoration: none;
+}
+.nav-item-interno
+{
+    position: relative;
+    padding: 10px 10px;
+    color: #F0A132;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    overflow: hidden;
+    transition: 0.2s;
+    width: min-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.item-interno-hover:hover
+{
+    color: #255784;
+    background-color: #F0A132;
+    box-shadow: 0 0 10px #F0A132, 0 0 40px #F0A132, 0 0 10px;
+}
+.nav-item-links
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+/* Menu principal*/
+
+.indice-container
+{
+    display: grid;
+    grid-template-columns: 34% 15% 15% 15% 15%;
+    width: 95%;
+    margin: auto;
+    column-gap: 15px;
+    margin-top: 40px;
+}
+
+.indice-item-categorias
+{
+    transition: transform .3s; /* Animation */
+}
+.indice-item-categorias:hover
+{
+    transform: scale(1.1);
+}
+.indice-item-categorias img
+{
+    width: 100%;
+    max-width: 200px;
+    min-width: 170;
+    height: 580px;
+}
+.indice-item-anteriores img
+{
+    width:400%;
+    margin:0 auto;
+}
+.indice-container
+{
+    height: 80%;
+}
+
+.indice-item-anteriores
+{
+    overflow: hidden;
+    height: 500px;
+}
+.indice-item-anteriores ul
+{
+    display:flex;
+    animation: anteriores 20s infinite alternate linear ;
+    width: 400%;
+}
+.indice-item-anteriores li
+{
+    width: 100%;
+    list-style-type: style none;
+}
+.indice-item-anteriores img
+{
+    max-width: none;
+}
+@keyframes anteriores 
+{
+    0%{margin-left: 0%;}
+    25%{margin-left: 0%;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+
+}
+/*
+////////////////////////////////////////////////////////////////
+*/
+/* footer */
+
+.footer
+{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+}
+.footer-container
+{
+    background-color:rgb(24, 23, 90);
+
+}
+
+/*CATEGORIAS
+////////////////////////////////////////////////////////////////
+*/
+.contenido-inicio img
+{
+    width:100%;
+    height:fit-content;
+}
+.contenido-inicio
+{
+    position: relative;
+    width: 100%;
+
+}
+.contenido-inicio a 
+{
+    position:absolute;
+    text-decoration: none;
+    color:#fff;
+    top: 25%;    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px 50px;
+    border-radius: 20px;
+    font-size:18px;
+    text-align: center;
+    transition:2s;
+}
+.nav-botton img
+{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#menu-dest
+{
+    display: none;
+}
+
+
+
+
+footer{
+    text-align: center;
+    position: absolute;
+    
+}
+p{
+    color: #F0A132;
+    line-height: 25px;
+    
+}
+
+.Socios.contenido-container{
+    text-align: center;
+}
+
+.columnas{
+    column-count:4;
+    column-gap:-100px;
+    column-rule:4px dotted gray;
+}
+
+
+@media (max-width: 1200px) {
+    .indice-container
+    {
+        grid-template-columns: 24% 24% 24% 24%;
+        width: 100%;
+        margin: 0 auto;
+        padding:5px;
+        row-gap: 15px;
+
+        margin-top: 40px;
+
+    }
+    .indice-item-anteriores
+    {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        overflow:hidden;
+        height:500px
+
+    }
+    .indice-item-anteriores img 
+    .indice-item-categorias
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .indice-item-categorias img{
+        height:auto;
+        
+    }
+    .indice-item-anteriores
+    {
+        margin-left: -10px;
+
+    }
+    .indice-item-anteriores img
+{
+    width:100%;
+    margin:0 auto;
+}
+.indice-item-anteriores
+{
+    margin:0 auto;
+}
+}
+  @media (max-width: 400px) {
+
+}
+
+
